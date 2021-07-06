@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "sql-demo-e13d1": {
+      "hosting": {
+        "ingresoEgresoApp": [
+          "sql-demo-e13d1"
+        ]
+      }
+    }
+  }
+}
