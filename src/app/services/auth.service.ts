@@ -39,7 +39,7 @@ export class AuthService {
         } else {
           console.log('llamar unset del user');
           this._user = null;
-          this.userSubscription.unsubscribe();
+          this.userSubscription?.unsubscribe();
           this._store.dispatch(authActions.unSetUser())
           this._store.dispatch(ingresoEgresoActions.unSetItems())
       }

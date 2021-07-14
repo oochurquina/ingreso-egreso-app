@@ -38,8 +38,8 @@ export class DashboardComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     //Called once, before the instance is destroyed.
     //Add 'implements OnDestroy' to the class.
-    this.ingEgrSubs.unsubscribe();
-    this.userSubs.unsubscribe();
+    this.ingEgrSubs?.unsubscribe();
+    this.userSubs?.unsubscribe();
   }
 
 }

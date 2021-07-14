@@ -28,7 +28,7 @@ export class SidebarComponent implements OnInit, OnDestroy {
           filter(({user})=> user!=null)
         )
         .subscribe( ({user}) =>{
-          this.usuarioActivo = user
+          this.usuarioActivo = user;
         })
   }
   ngOnDestroy(): void {
