@@ -8,10 +8,10 @@
                         <img src="assets/images/faces/face1.jpg" alt="profile image">
                     </div>
 
-                    <div class="text-wrapper">
-                        <p class="profile-name">Cristobal Colón</p>
+                    <div *ngIf="usuarioActivo" class="text-wrapper">
+                        <p class="profile-name">{{usuarioActivo.nombre }} </p>
                         <div>
-                            <small class="designation text-muted">Gerente</small>
+                            <small class="designation text-muted">{{usuarioActivo.correo}}</small>
                         </div>
                     </div>
                 </div>
